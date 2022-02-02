@@ -1,0 +1,4 @@
+<%= bootstrap_form_with(model: Room.new, remote: true ) do |f| %>
+  <%= f.text_field :name, autocomplete: 'off' %>
+  <%= f.primary data: { disable_with: false } %>
+<% end %>
